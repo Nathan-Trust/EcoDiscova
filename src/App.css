@@ -1,42 +1,32 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.backgroundSlide1{
+  background-image:url(./assets/birger-strahl-gjncW4qodb0-unsplash.jpg);
+  background-color: #0000003c;
+  background-size: cover;
+  border-radius: 24px;
+  height: 400px;
+  background-blend-mode: overlay;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.backgroundSlide2{
+  background-image:url(./assets/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg);
+  background-color: #00000000;
+  background-size: cover;
+  border-radius: 24px;
+  height: 400px;
+  background-blend-mode: overlay;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.backgroundSlide3{
+  background-image:url(./assets/hermes-rivera-R1_ibA4oXiI-unsplash.jpg);
+  background-color: #75363671;
+  background-size: cover;
+  border-radius: 24px;
+  height: 400px;
+  background-blend-mode: overlay;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.backgroundSlide4{
+  background-image:url(./assets//jamie-haughton-Z05GiksmqYU-unsplash.jpg);
+  background-color: #00000043;
+  background-size: cover;
+  border-radius: 24px;
+  height: 400px;
+  background-blend-mode: overlay;
 }
