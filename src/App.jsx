@@ -4,6 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/global/Navbar'
 import Hero from './Components/Hero'
+import Discover from './Components/Discover'
+import CardSection from './Components/CardSection'
+import slides from "./assets/mockdata.json";
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +15,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero/>
+      <Hero />
+      <Discover />
+      <CardSection />
     </>
   );
 }

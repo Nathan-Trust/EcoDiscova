@@ -3,7 +3,7 @@
   background-color: #0000003c;
   background-size: cover;
   border-radius: 24px;
-  height: 400px;
+  height: 550px;
   background-blend-mode: overlay;
 }
 .backgroundSlide2{
@@ -11,15 +11,15 @@
   background-color: #00000000;
   background-size: cover;
   border-radius: 24px;
-  height: 400px;
+  height: 550px;
   background-blend-mode: overlay;
 }
 .backgroundSlide3{
   background-image:url(./assets/hermes-rivera-R1_ibA4oXiI-unsplash.jpg);
-  background-color: #75363671;
+  background-color: #00000083;
   background-size: cover;
   border-radius: 24px;
-  height: 400px;
+  height: 550px;
   background-blend-mode: overlay;
 }
 .backgroundSlide4{
@@ -27,6 +27,108 @@
   background-color: #00000043;
   background-size: cover;
   border-radius: 24px;
-  height: 400px;
+  height: 550px;
   background-blend-mode: overlay;
 }
+
+.backgroundSlide5{
+  background-image:url(./assets//noah-buscher-x8ZStukS2PM-unsplash.jpg);
+  background-color: #00000043;
+  background-size: cover;
+  border-radius: 24px;
+  height: 550px;
+  background-blend-mode: overlay;
+}
+/* 
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.buttonA{
+  display: block;
+  /* line-height: 40px; */
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  /* color: #a6adba; */
+  /* border: 2px solid #a6adba; */
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  border-radius: 5px;
+}
+
+.buttonA span{
+  position: relative;
+  z-index: 2;
+}
+
+.buttonA:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #4baf47;
+  transition: all .35s;
+}
+
+.buttonA:hover{
+  color: #fff;
+}
+
+.buttonA:hover:after{
+  width: 100%;
+}
+
+.iconSpan{
+  font-weight: 700;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d9d9d9;
+    font-size: 60px;
+    line-height: 80px;
+    color: transparent;
+    transition:  all 0.4s ease-in-out;;
+}
+
+
+ .example_f span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.4s;
+ }
+ .example_f span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+ }
+ .example_f:hover span {
+   padding-right: 25px;
+   color:#4baf47;
+ }
+ .example_f:hover span:after {
+   opacity: 1;
+   right: 0;
+ }
+
+
+
+ ::-webkit-scrollbar {
+    width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+    background-color: rgb(216, 216, 216);
+    border-radius: 40px;
+    }
+    ::-webkit-scrollbar-track {
+    background-color: transparent;
+    } 
