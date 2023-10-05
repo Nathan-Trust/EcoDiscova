@@ -14,7 +14,7 @@
           className="mt-[100px]"
         >
           <div className="mx-[20px] md:mx-[80px] ">
-            <div className="  backgroundSlide1 bg-center " />
+            <div className="  backgroundSlide1  " />
           </div>
           <div className="mx-[20px] md:mx-[80px]">
             <div className="  backgroundSlide2 bg-center" />
