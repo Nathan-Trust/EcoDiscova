@@ -6,9 +6,9 @@ import Header from './Header';
 export default function CardSection() {
   return (
     <>
-      <Header title={"Our Services"} />
+      <Header title={"Our Services"} textSizeSM={"3xl"} textSize={"3xl"} />
       <OurCaseStudySection />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-2 mx-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-2 px-5">
         {cards.map((card) => (
           <div className="card  bg-base-100 shadow-xl border-2 border-gray-500 border-solid py-3">
             <div className="flex justify-between mx-5 items-center">

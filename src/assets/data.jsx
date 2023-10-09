@@ -1,3 +1,8 @@
+import fundraiser1 from "../assets/fundraiser1.jpg"
+import teamMember1 from "../assets/exhibit1.png"
+
+
+
 export const cards = [
   {
     icon: (
@@ -102,5 +107,60 @@ export const cards = [
     title: "Education",
     content:
       "We maintain a busy network of forestry and social development staff along with local facilitators in the areas we work.",
+  },
+];
+
+
+
+export const slides = [
+  {
+    id: 1,
+    image: `${fundraiser1}`,
+    goal: "$30,000",
+    raised: "$250",
+    theme: "Philips donate for child and women lifestyle",
+  },
+  {
+    id: 2,
+    image: `${fundraiser1}`,
+    goal: "$30,000",
+    raised: "$250",
+    theme: "Doctor Need Help For Pet & Nurse Here",
+  },
+  {
+    id: 3,
+    image: `${fundraiser1}`,
+    goal: "$30,000",
+    raised: "$250",
+    theme: "Philips donate for child and women lifestyle",
+  },
+  {
+    id: 4,
+    image: `${fundraiser1}`,
+    goal: "$30,000",
+    raised: "$250",
+    theme: "Philips donate for child and women lifestyle",
+  },
+];
+
+
+
+
+
+export const teams = [
+  {
+    image: `${teamMember1}`,
+    name: "Esvic",
+    cadre: "Senior Engineer",
+  },
+  {
+    image: `${teamMember1}`,
+    name: "Victor",
+    cadre: "Python  Engineer",
+  },
+  {
+    image: `${teamMember1}`,
+    name: "Nathan Knorr",
+    cadre: "Novice",
   },
 ];

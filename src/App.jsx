@@ -1,26 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Components/global/Navbar";
-import Hero from "./Components/Hero";
-import Discover from "./Components/Discover";
-import CardSection from "./Components/CardSection";
-import OurCaseStudySection from "./Components/OurCaseStudySection";
-import NewsSection from "./Components/NewsSection";
-import FundraiserSection from "./Components/FundraiserSection";
+import LandingPage from "./pages/LandingPage";
+import Page404 from "./pages/Page404";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Discover />
-      <CardSection />
-      <NewsSection />
-      {/* <FundraiserSection/> */}
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/signIn" element={<SignUp/>} />
+        <Route path="/logIn" element={<Login/>}  />
+        <Route path="*" element={<Page404/>} />
+      </Routes>
     </>
   );
 }

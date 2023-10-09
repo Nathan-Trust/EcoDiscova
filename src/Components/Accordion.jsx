@@ -58,7 +58,7 @@ export default function ControlledAccordion() {
             handleBgChange("panel1");
           }}
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontSize: "21px" }}>
             Carbon Offsetting
           </Typography>
         </AccordionSummary>
@@ -94,7 +94,7 @@ export default function ControlledAccordion() {
             handleBgChange("panel2");
           }}
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontSize: "21px" }}>
             Community Forestry
           </Typography>
         </AccordionSummary>
@@ -130,7 +130,7 @@ export default function ControlledAccordion() {
             handleBgChange("panel3");
           }}
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>
+          <Typography sx={{ width: "33%", flexShrink: 0, fontSize: "21px" }}>
             E-waste Recycling
           </Typography>
         </AccordionSummary>
@@ -166,8 +166,8 @@ export default function ControlledAccordion() {
             handleBgChange("panel4");
           }}
         >
-          <Typography sx={{ width: "33%", flexShrink: 0 }}>
-           Water Conservation
+          <Typography sx={{ width: "33%", flexShrink: 0, fontSize: "21px" }}>
+            Water Conservation
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#1d232a", color: "#8d94a0" }}>

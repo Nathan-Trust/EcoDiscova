@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Header({title}) {
+export default function Header({title,textSize,textSizeSM}) {
   return (
     <div>
-      <h3 className="flex justify-center text-4xl items-center text-[#4baf47]">
+      <h3 className={`flex justify-center text-${textSizeSM} lg:text-4xl items-center text-[#4baf47]`}>
      {title}
         <svg
           xmlns="http://www.w3.org/2000/svg"

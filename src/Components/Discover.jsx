@@ -1,23 +1,24 @@
 import {MdKeyboardDoubleArrowRight} from 'react-icons/md'
+import { Link } from 'react-router-dom';
 
 export default function Discover() {
   return (
-    <div className="px-5 flex flex-col lg:flex-row my-[40px] py-[90px] justify-center items-center lg:items-start">
-      <div className=" md:w-[600px]  lg:w-[70%]">
+    <div className="px-5  flex flex-col lg:flex-row my-[40px] py-[90px] justify-center items-center lg:items-start">
+      <div className=" md:w-[600px]   lg:w-[70%]">
         <h4 className="text-[#4baf47] ">Embrace The Green, Sow The Future</h4>
         <h1 className="text-2xl leading-[25px] lg:text-[50px] lg:leading-[64px]">
           We Are Here To Increase Your Modern Life With{" "}
           <span className="text-[#4baf47]">Planting</span>
         </h1>
-        <a
-          href="#"
-          className="buttonA my-5 py-1 px-1 w-[150px] h-[30px] lg:w-[200px] lg:h-[50px] border-solid border-[#4baf47] border-2 text-[#4baf47] flex items"
+        <Link
+          to="/logIn"
+          className="buttonA my-5 py-1 px-1 w-[220px] lg:w-[200px] lg:h-[50px] border-solid border-[#4baf47] border-2 text-[#4baf47] flex items"
         >
-          <span className="flex items-center text-[10px] lg:text-[18px]">
+          <span className="flex items-center text-[20px] lg:text-[18px]">
             {" "}
             Discover with us <MdKeyboardDoubleArrowRight />
           </span>
-        </a>
+        </Link>
       </div>
 
       <div className="md:w-[600px] lg:w-[700px]">
@@ -31,7 +32,7 @@ export default function Discover() {
           <div>
             <div className="flex justify-between">
               <p>Carbon Offsetting</p>
-              <p className="text-[#36d399]">80%</p>
+              <p className="text-[#4baf47]">80%</p>
             </div>
             <progress
               className="progress progress-success w-100"
@@ -42,7 +43,7 @@ export default function Discover() {
           <div>
             <div className="flex justify-between">
               <p>Water Conservation</p>
-              <p className="text-[#36d399]">90%</p>
+              <p className="text-[#4baf47]">90%</p>
             </div>
             <progress
               className="progress progress-success w-100"
@@ -53,7 +54,7 @@ export default function Discover() {
           <div>
             <div className="flex justify-between">
               <p>E-Waste Recycling</p>
-              <p className="text-[#36d399]">70%</p>
+              <p className="text-[#4baf47]">70%</p>
             </div>
             <progress
               className="progress progress-success w-100"

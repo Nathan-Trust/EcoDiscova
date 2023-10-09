@@ -6,7 +6,7 @@ export default function OurCaseStudySection() {
     <div class="marquee-wrapper mt-10">
       <div class="marquee-inner">
         <div class="marquee-item">
-          <span class="stroke-text text-[#a6adba] lg:text-[80px]">What we do</span>
+          <span class="stroke-text text-[#a6adba]  text-4xl lg:text-[80px]">What we do</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="31"
@@ -19,7 +19,7 @@ export default function OurCaseStudySection() {
               fill="#4BAF47"
             ></path>
           </svg>{" "}
-          <span class="stroke-text lg:text-[80px]">What we do</span>
+          <span class="stroke-text text-4xl lg:text-[80px]">What we do</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="31"
@@ -32,7 +32,7 @@ export default function OurCaseStudySection() {
               fill="#4BAF47"
             ></path>
           </svg>{" "}
-          <span class="stroke-text text-[#a6adba] lg:text-[80px]">What we do</span>
+          <span class="stroke-text text-[#a6adba] text-4xl lg:text-[80px]">What we do</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="31"
@@ -45,7 +45,7 @@ export default function OurCaseStudySection() {
               fill="#4BAF47"
             ></path>
           </svg>{" "}
-          <span class="stroke-text lg:text-[80px]">What we do</span>
+          <span class="stroke-text text-4xl lg:text-[80px]">What we do</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="31"
@@ -58,7 +58,7 @@ export default function OurCaseStudySection() {
               fill="#4BAF47"
             ></path>
           </svg>{" "}
-          <span class="stroke-text text-[#a6adba] lg:text-[80px]">What we do</span>
+          <span class="stroke-text text-[#a6adba] text-4xl lg:text-[80px]">What we do</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="31"
@@ -71,7 +71,7 @@ export default function OurCaseStudySection() {
               fill="#4BAF47"
             ></path>
           </svg>{" "}
-          <span class="stroke-text lg:text-[80px]">What we do</span>
+          <span class="stroke-text text-4xl lg:text-[80px]">What we do</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="31"
@@ -84,7 +84,7 @@ export default function OurCaseStudySection() {
               fill="#4BAF47"
             ></path>
           </svg>{" "}
-          <span class="stroke-text text-[#a6adba] lg:text-[80px]">What we do</span>
+          <span class="stroke-text text-[#a6adba] text-4xl lg:text-[80px]">What we do</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="31"

@@ -9,7 +9,7 @@ export default function NewsSection() {
   const {image} = useMyContext()
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-[90px] mx-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 mt-[90px] px-5 gap-4">
       <ControlledAccordion/>
 
         <div className="h-[100%]">
