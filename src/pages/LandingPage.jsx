@@ -7,6 +7,8 @@ import FundraiserSection from "../Components/FundraiserSection";
 import InvolvementSection from "../Components/InvolvementSection";
 import OurClientsFeedbackSection from "../Components/OurClientsFeedbackSection";
 import OurTeams from "../Components/OurTeams";
+import Details from "../Components/Details";
+import FooterSection from "../Components/FooterSection";
 
 
 
@@ -17,11 +19,13 @@ export default function LandingPage() {
       <Hero/>
       <Discover />
       <CardSection/>
-      <NewsSection />
+      <Details/>
       <FundraiserSection/>
       <InvolvementSection />
       <OurClientsFeedbackSection />
-      <OurTeams/>
+      <OurTeams />
+      <NewsSection />
+      <FooterSection/>
     </>
   );
 }

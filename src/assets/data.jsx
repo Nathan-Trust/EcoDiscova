@@ -1,5 +1,6 @@
 import fundraiser1 from "../assets/fundraiser1.jpg"
 import teamMember1 from "../assets/exhibit1.png"
+import news from "../assets/news.png"
 
 
 
@@ -162,5 +163,30 @@ export const teams = [
     image: `${teamMember1}`,
     name: "Nathan Knorr",
     cadre: "Novice",
+  },
+];
+
+
+export const newsSections = [
+  {
+    theme: "Environment",
+    title: "A Team of scientist from NASA'S Jet Propulsion",
+    content:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit Sit debitis saepe vero nam amet hic cu necessitatibus, iure laudantium assumenda fuga dolorem incidunt accusantium recusandae! Distinctio, quaerat reiciendis. Quia ",
+    img: `${news}`,
+  },
+  {
+    theme: "Environment",
+    title: "A Team of scientist from NASA'S Jet Propulsion",
+    content:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit Sit debitis saepe vero nam amet hic cu necessitatibus, iure laudantium assumenda fuga dolorem incidunt accusantium recusandae! Distinctio, quaerat reiciendis. Quia ",
+    img: `${news}`,
+  },
+  {
+    theme: "Environment",
+    title: "A Team of scientist from NASA'S Jet Propulsion",
+    content:
+      " Lorem ipsum dolor, sit amet consectetur adipisicing elit Sit debitis saepe vero nam amet hic cu necessitatibus, iure laudantium assumenda fuga dolorem incidunt accusantium recusandae! Distinctio, quaerat reiciendis. Quia ",
+    img: `${news}`,
   },
 ];

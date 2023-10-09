@@ -9,7 +9,7 @@ export default function InvolvementSection() {
     <div className='px-5'>
       <div className="involvementSection mt-10  flex flex-col items-center justify-center">
         <Header title={"Get Involved Now"} textSizeSM={"xl"} textSize={"4xl"} />
-        <h1 className="text-3xl md:text-[50px] md:w-[50%] text-center">
+        <h1 className="text-3xl md:text-[50px] md:w-[50%] leading-[50px] text-center">
           We Have The Power Today To Change Tomorrow
         </h1>
         <Link

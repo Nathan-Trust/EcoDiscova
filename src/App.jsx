@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import "./App.scss"
 import LandingPage from "./pages/LandingPage";
 import Page404 from "./pages/Page404";
 import Login from "./pages/Login";
