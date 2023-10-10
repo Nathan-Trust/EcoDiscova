@@ -16,7 +16,7 @@ export default function OurTeams() {
   return (
     <div className="mt-9">
       <Header title={"Our Team Members"} textSizeSM={"xl"} textSize={"4xl"} />
-      <h2 className="text-center ">Foresty Awesome Team</h2>
+      <h2 className="text-center ">EcoDiscova Awesome Team</h2>
       <section>
         <div class=" grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div class="">

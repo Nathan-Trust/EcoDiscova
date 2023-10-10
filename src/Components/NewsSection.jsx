@@ -44,7 +44,7 @@ export default function NewsSection() {
     <>
       <div className="mt-[90px] px-5">
         <Header title={"Latest News"} />
-        <h2 className="text-center">Get News From Foresty</h2>
+        <h2 className="text-center">Get News From EcoDiscova</h2>
         <div className="flex gap-4 mt-[40px]">
           <Swiper
             spaceBetween={50}

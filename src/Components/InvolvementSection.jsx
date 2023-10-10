@@ -18,7 +18,7 @@ export default function InvolvementSection() {
         >
           <span className="flex items-center text-[15px] lg:text-[18px]">
             {" "}
-            Join With Us <MdKeyboardDoubleArrowRight />
+            Partner With Us <MdKeyboardDoubleArrowRight />
           </span>
         </Link>
       </div>

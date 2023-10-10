@@ -10,7 +10,7 @@
 }
 
 .backgroundSlide1 {
-  background-image: url(./assets/birger-strahl-gjncW4qodb0-unsplash.jpg);
+  background-image: url("./assets/birger-strahl-gjncW4qodb0-unsplash.jpg");
   background-color: #0000003c;
   background-size: cover;
   border-radius: 24px;
@@ -18,7 +18,7 @@
   background-blend-mode: overlay;
 }
 .backgroundSlide2 {
-  background-image: url(./assets/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg);
+  background-image: url("./assets/nathan-dumlao-q3YZ4g7j9yc-unsplash.jpg");
   background-color: #00000000;
   background-size: cover;
   border-radius: 24px;
@@ -26,7 +26,7 @@
   background-blend-mode: overlay;
 }
 .backgroundSlide3 {
-  background-image: url(./assets/hermes-rivera-R1_ibA4oXiI-unsplash.jpg);
+  background-image: url("./assets/hermes-rivera-R1_ibA4oXiI-unsplash.jpg");
   background-color: #00000083;
   background-size: cover;
   border-radius: 24px;
@@ -34,7 +34,7 @@
   background-blend-mode: overlay;
 }
 .backgroundSlide4 {
-  background-image: url(./assets//jamie-haughton-Z05GiksmqYU-unsplash.jpg);
+  background-image: url("./assets//jamie-haughton-Z05GiksmqYU-unsplash.jpg");
   background-color: #00000043;
   background-size: cover;
   border-radius: 24px;
@@ -43,7 +43,7 @@
 }
 
 .backgroundSlide5 {
-  background-image: url(./assets//noah-buscher-x8ZStukS2PM-unsplash.jpg);
+  background-image: url("./assets//noah-buscher-x8ZStukS2PM-unsplash.jpg");
   background-color: #00000043;
   background-size: cover;
   border-radius: 24px;
@@ -55,7 +55,7 @@
 
 
 .involvementSection {
-  background-image: url(./assets//noah-buscher-x8ZStukS2PM-unsplash.jpg);
+  background-image: url("./assets/noah-buscher-x8ZStukS2PM-unsplash.jpg");
   background-color: #000000bc;
   background-size: cover;
   border-radius: 24px;
