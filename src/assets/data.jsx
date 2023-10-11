@@ -1,5 +1,4 @@
 import fundraiser1 from "../assets/fundraiser1.jpg"
-import teamMember1 from "../assets/exhibit1.png"
 import news from "../assets/news.png"
 
 
@@ -141,28 +140,6 @@ export const slides = [
     goal: "$30,000",
     raised: "$250",
     theme: "Philips donate for child and women lifestyle",
-  },
-];
-
-
-
-
-
-export const teams = [
-  {
-    image: `${teamMember1}`,
-    name: "Esvic",
-    cadre: "Senior Engineer",
-  },
-  {
-    image: `${teamMember1}`,
-    name: "Victor",
-    cadre: "Python  Engineer",
-  },
-  {
-    image: `${teamMember1}`,
-    name: "Nathan Knorr",
-    cadre: "Novice",
   },
 ];
 

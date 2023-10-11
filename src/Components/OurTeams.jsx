@@ -6,9 +6,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
-import exhibit1 from "../assets/exhibit1.png";
 import Header from "./Header";
-import { teams } from "../assets/data";
 import esvic from "../assets/esvic.jpeg"
 
 
