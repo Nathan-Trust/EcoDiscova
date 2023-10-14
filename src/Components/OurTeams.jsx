@@ -10,6 +10,7 @@ import Header from "./Header";
 import esvic from "../assets/esvic.jpeg"
 
 
+
 export default function OurTeams() {
   return (
     <div className="mt-9">
@@ -21,9 +22,9 @@ export default function OurTeams() {
             <div class="card2">
               <div class="cover item-a ">
                 <h1>
-                  Esvic Victor
+                  Nathan Knorr
                   <br />
-                  Senior Dev
+                  Novice
                 </h1>
                 {/* <span class="price">$79</span> */}
                 <div class="card-back">
@@ -48,10 +49,11 @@ export default function OurTeams() {
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="card2">
               <div class="cover item-b">
+                {" "}
                 <h1>
-                  Nathan Knorr
+                  Esvic Victor
                   <br />
-                  Novice
+                  Senior Dev
                 </h1>
                 {/* <span class="price">$35</span> */}
                 <div class="card-back">
@@ -77,13 +79,26 @@ export default function OurTeams() {
             <div class="card2">
               <div class="cover item-c">
                 <h1>
-                  Marijuana
+                  Victor Jacob
                   <br />
-                  Chill
+                  Python Developer
                 </h1>
-                <span class="price">$155</span>
+                {/* <span class="price">$35</span> */}
                 <div class="card-back">
-                  <a href="#">Add to cart</a>
+                  <a href="#">
+                    <FaFacebook />
+                  </a>
+                  <a href="#">
+                    <AiFillLinkedin />
+                  </a>
+
+                  <a href="#">
+                    <AiFillInstagram />
+                  </a>
+
+                  <a href="#">
+                    <AiFillTwitterCircle />
+                  </a>
                 </div>
               </div>
             </div>
