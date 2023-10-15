@@ -24,7 +24,7 @@ export default function OurTeams() {
                 <h1>
                   Nathan Knorr
                   <br />
-                  Novice
+                  Frontend Engineer
                 </h1>
                 {/* <span class="price">$79</span> */}
                 <div class="card-back">
