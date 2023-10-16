@@ -14,7 +14,7 @@ export default function InvolvementSection() {
         </h1>
         <Link
           to="/logIn"
-          className="buttonA my-5 py-1 px-1  w-[150px] h-[30px] lg:w-[200px] lg:h-[50px] border-solid border-[#4baf47] border-2 text-[#4baf47] flex justify-center"
+          className="buttonA my-5 py-1 px-1  w-[210px] h-[30px] lg:w-[200px] lg:h-[50px] border-solid border-[#4baf47] border-2 text-[#4baf47] flex justify-center"
         >
           <span className="flex items-center text-[15px] lg:text-[18px]">
             {" "}

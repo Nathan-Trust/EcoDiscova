@@ -1,3 +1,4 @@
+import { SendOutlined } from "@mui/icons-material";
 import React from "react";
 import { GrSend } from "react-icons/gr";
 
@@ -50,6 +51,7 @@ export default function FooterSection() {
                   className="text-white hover:text-gray-700"
                 >
                   <GrSend className="text-white" />
+                  {/* <SendOutlined/>  */}
                 </button>
               </span>
             </div>

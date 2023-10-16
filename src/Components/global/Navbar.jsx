@@ -11,12 +11,16 @@ export default function Navbar() {
             EcoDiscova
           </a>
         </div>
-        <div className="hidden md:flex gap-4">
-          <a>Discoveries</a>
-          <a>Achievements</a>
-          <a>Blog</a>
-          <Link to="/logIn">Login</Link>
-          <Link to="signIn">Sign in</Link>
+        <div className='flex gap-4 nav'>
+          <div className="hidden md:flex gap-4">
+            <a>Discoveries</a>
+            <a>Achievements</a>
+            <a>Blog</a>
+          </div>
+          <div className='flex gap-4'>
+            <Link to="/logIn">Login</Link>
+            <Link to="/signUp">Sign in</Link>
+          </div>
         </div>
       </div>
     </div>

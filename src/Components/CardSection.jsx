@@ -2,6 +2,7 @@ import React from 'react'
 import { cards } from '../assets/data'
 import OurCaseStudySection from './OurCaseStudySection';
 import Header from './Header';
+import { Link } from 'react-router-dom';
 
 export default function CardSection() {
   return (
@@ -26,7 +27,7 @@ export default function CardSection() {
                     target="_blank"
                     rel="nofollow"
                   >
-                    <span>Know More </span>
+                    <Link to="/logIn">Know More </Link>
                   </a>
                 </div>
               </div>

@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export default function OurCaseStudySection() {
   return (
-    <div class="marquee-wrapper mt-10">
+    <div class="marquee-wrapper my-3">
       <div class="marquee-inner">
         <div class="marquee-item">
           <span class="stroke-text text-[#a6adba]  text-4xl lg:text-[80px]">What we do</span>

@@ -10,6 +10,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { slides } from "../assets/data";
 import { ArrowForwardIosOutlined } from "@mui/icons-material";
 import {BsArrowRight} from "react-icons/bs"
+import { Link } from "react-router-dom";
 
 export default function FundraiserSection() {
   const swiperRef = useRef(null); // Create a ref
@@ -77,11 +78,11 @@ export default function FundraiserSection() {
                   <div className="card-actions mt-6 hover:text-[#4baf47] text-3xl">
                     <h3>{slide.theme}</h3>
                   </div>
-                  <a className="example_ff my-4 " rel="nofollow">
+                  <Link to="/logIn" className="example_ff my-4 " rel="nofollow">
                     <span>
                       <ArrowForwardIosOutlined />
                     </span>
-                  </a>
+                  </ Link>
                 </div>
               </div>
             </div>

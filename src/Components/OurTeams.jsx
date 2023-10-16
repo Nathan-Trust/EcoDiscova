@@ -28,20 +28,23 @@ export default function OurTeams() {
                 </h1>
                 {/* <span class="price">$79</span> */}
                 <div class="card-back">
-                  <a href="#">
-                    <FaFacebook />
-                  </a>
-                  <a href="#">
-                    <AiFillLinkedin />
-                  </a>
+                  <h2>Let's connect </h2>
+                  <div className="cardexCover">
+                    <a href="#">
+                      <FaFacebook />
+                    </a>
+                    <a href="#">
+                      <AiFillLinkedin />
+                    </a>
 
-                  <a href="#">
-                    <AiFillInstagram />
-                  </a>
+                    <a href="#">
+                      <AiFillInstagram />
+                    </a>
 
-                  <a href="#">
-                    <AiFillTwitterCircle />
-                  </a>
+                    <a href="#">
+                      <AiFillTwitterCircle />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -57,20 +60,23 @@ export default function OurTeams() {
                 </h1>
                 {/* <span class="price">$35</span> */}
                 <div class="card-back">
-                  <a href="#">
-                    <FaFacebook />
-                  </a>
-                  <a href="#">
-                    <AiFillLinkedin />
-                  </a>
+                  <h2>Let's connect </h2>
+                  <div className="cardexCover">
+                    <a href="#">
+                      <FaFacebook />
+                    </a>
+                    <a href="#">
+                      <AiFillLinkedin />
+                    </a>
 
-                  <a href="#">
-                    <AiFillInstagram />
-                  </a>
+                    <a href="#">
+                      <AiFillInstagram />
+                    </a>
 
-                  <a href="#">
-                    <AiFillTwitterCircle />
-                  </a>
+                    <a href="#">
+                      <AiFillTwitterCircle />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -85,20 +91,23 @@ export default function OurTeams() {
                 </h1>
                 {/* <span class="price">$35</span> */}
                 <div class="card-back">
-                  <a href="#">
-                    <FaFacebook />
-                  </a>
-                  <a href="#">
-                    <AiFillLinkedin />
-                  </a>
+                  <h2>Let's connect </h2>
+                  <div className="cardexCover">
+                    <a href="#">
+                      <FaFacebook />
+                    </a>
+                    <a href="#">
+                      <AiFillLinkedin />
+                    </a>
 
-                  <a href="#">
-                    <AiFillInstagram />
-                  </a>
+                    <a href="#">
+                      <AiFillInstagram />
+                    </a>
 
-                  <a href="#">
-                    <AiFillTwitterCircle />
-                  </a>
+                    <a href="#">
+                      <AiFillTwitterCircle />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
