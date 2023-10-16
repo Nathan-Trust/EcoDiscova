@@ -74,7 +74,7 @@ export default function FooterSection() {
           <p>
             EcoDiscova
             <br />
-            Providing reliable tech since 1992
+            Providing reliable tech 
           </p>
         </aside>
         <nav className="md:place-self-center md:justify-self-end">
