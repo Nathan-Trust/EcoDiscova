@@ -12,30 +12,46 @@ export const ContextProvider = ({ children }) => {
   const [storageRef, setStorageRef] = useState("");
   const [currentUser, setCurrentUser] = useState();
   const [userUpdated, setUserUpdated] = useState(true);
+  const [activeMenu, setActiveMenu] = useState("true");
+  
+  const [screenSize, setScreenSize] = useState(undefined);
 
 
-   useEffect(() => {
-     const unsubscribe = onAuthStateChanged(auth, (user) => {
-       if (user) {
-         setCurrentUser(user);
-         setUserUpdated(true);
-         localStorage.setItem("isUserSignedIn", true);
-         localStorage.setItem("chatSignedIn", true);
-         console.log(currentUser);
-         console.log(user);
-       } else {
-         setUserUpdated(false);
-         localStorage.removeItem("isUserSignedIn");
-         localStorage.removeItem("chatSignedIn");
-       }
-     });
-     return () => {
-       unsubscribe();
-     };
-   }, [currentUser]);
+ useEffect(() => {
+   const unsubscribe = onAuthStateChanged(auth, (user) => {
+     if (user) {
+       setCurrentUser(user);
+       setUserUpdated(true);
+       localStorage.setItem("isUserSignedIn", true);
+       localStorage.setItem("chatSignedIn", true);
+       console.log(currentUser);
+       console.log(user);
+     } else {
+       setUserUpdated(false);
+       localStorage.removeItem("isUserSignedIn");
+       localStorage.removeItem("chatSignedIn");
+     }
+   });
+   return () => {
+     unsubscribe();
+   };
+ }, [currentUser]);
 
   return (
-    <StateContext.Provider value={{ image, setImage , displayName , setDisplayName ,storageRef , setStorageRef }}>
+    <StateContext.Provider
+      value={{
+        image,
+        setImage,
+        displayName,
+        setDisplayName,
+        storageRef,
+        setStorageRef,
+        activeMenu,
+        setActiveMenu,
+        screenSize,
+        setScreenSize,
+      }}
+    >
       {children}
     </StateContext.Provider>
   );

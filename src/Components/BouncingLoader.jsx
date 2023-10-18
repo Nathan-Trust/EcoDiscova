@@ -10,4 +10,4 @@ const BouncingLoader = () => {
   )
 }
 
-export default BouncingLoader
+export default BouncingLoader;

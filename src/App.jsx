@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import ProtectedRoute from "./ProtectedRoute";
 import Avatar from "./pages/Avatar";
+import Dashboard from "./pages/Dashboard";
 
 
 function App() {
@@ -21,7 +22,15 @@ function App() {
           path="/signUp/avatar"
           element={
             <ProtectedRoute>
-              <Avatar/>
+              <Avatar />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
             </ProtectedRoute>
           }
         />

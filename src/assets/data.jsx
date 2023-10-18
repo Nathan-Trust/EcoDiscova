@@ -1,5 +1,47 @@
 import fundraiser1 from "../assets/fundraiser1.jpg"
-import news from "../assets/news.png"
+import news from "../assets/news.png";
+import { MdAnalytics,
+  MdCalendarMonth,
+  MdDashboard,
+  MdInventory,
+  MdMessage,
+  MdNotes,
+  MdOutlineNotifications,
+  MdVideoLibrary,
+} from "react-icons/md";
+import {
+  AiOutlineCalendar,
+  AiOutlineShoppingCart,
+  AiOutlineAreaChart,
+  AiOutlineBarChart,
+  AiOutlineStock,
+} from "react-icons/ai";
+import {
+  FiShoppingBag,
+  FiEdit,
+  FiPieChart,
+  FiBarChart,
+  FiCreditCard,
+  FiStar,
+  FiShoppingCart,
+} from "react-icons/fi";
+import {
+  BsKanban,
+  BsBarChart,
+  BsBoxSeam,
+  BsCurrencyDollar,
+  BsShield,
+  BsChatLeft,
+} from "react-icons/bs";
+import { BiColorFill } from "react-icons/bi";
+import { IoMdContacts } from "react-icons/io";
+import { RiContactsLine, RiStockLine } from "react-icons/ri";
+import { MdOutlineSupervisorAccount } from "react-icons/md";
+import { HiOutlineRefresh } from "react-icons/hi";
+import { TiTick } from "react-icons/ti";
+import { GiLouvrePyramid } from "react-icons/gi";
+import { GrLocation } from "react-icons/gr";
+
 
 
 
@@ -165,5 +207,45 @@ export const newsSections = [
     content:
       " Lorem ipsum dolor, sit amet consectetur adipisicing elit Sit debitis saepe vero nam amet hic cu necessitatibus, iure laudantium assumenda fuga dolorem incidunt accusantium recusandae! Distinctio, quaerat reiciendis. Quia ",
     img: `${news}`,
+  },
+];
+
+
+
+export const links = [
+  {
+    name: "Dashboard",
+    link: "/dashboard",
+    icon: <MdDashboard />,
+  },
+  {
+    name: "Analytics",
+    link: "/analytics",
+    icon: <MdAnalytics />,
+  },
+  {
+    name: "Invoice",
+    link: "/invoice",
+    icon: <MdInventory />,
+  },
+  {
+    name: "Schedule",
+    link: "/schedule",
+    icon: <MdNotes />,
+  },
+  {
+    name: "Calendar",
+    link: "/calendar",
+    icon: <MdCalendarMonth />,
+  },
+  {
+    name: "Messages",
+    link: "/messages",
+    icon: <MdMessage />,
+  },
+  {
+    name: "Notifications",
+    link: "/notification",
+    icon: <MdOutlineNotifications />,
   },
 ];
