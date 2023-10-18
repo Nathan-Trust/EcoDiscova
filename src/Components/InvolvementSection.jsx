@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 
 export default function InvolvementSection() {
   return (
-    <div className='px-5'>
-      <div className="involvementSection mt-10  flex flex-col items-center justify-center">
+    <div className="px-5">
+      <div className="involvementSection mt-10  flex flex-col items-center justify-center text-[#a6adba] ">
         <Header title={"Get Involved Now"} textSizeSM={"xl"} textSize={"4xl"} />
         <h1 className="text-3xl md:text-[50px] md:w-[50%] leading-[50px] text-center">
           We Have The Power Today To Change Tomorrow

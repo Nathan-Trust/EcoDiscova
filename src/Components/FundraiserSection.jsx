@@ -41,7 +41,7 @@ export default function FundraiserSection() {
   return (
     <div className="mt-10">
       <Header title={"Open Donation"} textSizeSM={"xl"} textSize={"4xl"} />
-      <h2 className="text-center text-3xl">
+      <h2 className="text-center text-3xl text-[#a6adba]">
         Fundraising Causes Need For The Future
       </h2>
 
@@ -61,7 +61,7 @@ export default function FundraiserSection() {
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div>
-              <div className="card swiperCard bg-base-100 shadow-xl border-2 border-gray-500 border-solid">
+              <div className="card swiperCard bg-[#1d232a] text-[#a6adba] shadow-xl border-2 border-gray-500 border-solid">
                 <figure>
                   <img src={slide.image} alt={slide.goal} />
                 </figure>
@@ -82,7 +82,7 @@ export default function FundraiserSection() {
                     <span>
                       <ArrowForwardIosOutlined />
                     </span>
-                  </ Link>
+                  </Link>
                 </div>
               </div>
             </div>

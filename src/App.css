@@ -9,6 +9,11 @@
   background-color: transparent;
 }
 
+body{
+  background-color: #1d232a;
+  /* #a6adba */
+}
+
 .backgroundSlide1 {
   background-image: url("./assets/birger-strahl-gjncW4qodb0-unsplash.jpg");
   background-color: #0000003c;

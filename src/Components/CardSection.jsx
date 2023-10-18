@@ -11,7 +11,7 @@ export default function CardSection() {
       <OurCaseStudySection />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-2 px-5">
         {cards.map((card) => (
-          <div className="card  bg-base-100 shadow-xl border-2 border-gray-500 border-solid py-3">
+          <div className="card  bg-[#1d232a] text-[#a6adba] shadow-xl border-2 border-gray-500 border-solid py-3">
             <div className="flex justify-between mx-5 items-center">
               <div> {card.icon}</div>
               <p className="iconSpan">{card.id}</p>

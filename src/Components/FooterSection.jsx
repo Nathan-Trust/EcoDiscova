@@ -5,7 +5,7 @@ import { GrSend } from "react-icons/gr";
 export default function FooterSection() {
   return (
     <div className="mt-10">
-      <footer className="footer p-10 bg-base-200 text-base-content ">
+      <footer className="footer p-10 bg-[#1d232a] text-[#a6adba]  border-t  border-[#a6adba]">
         <nav>
           <header className="footer-title">Services</header>
           <a className="link link-hover">Branding</a>
@@ -29,7 +29,9 @@ export default function FooterSection() {
         <form>
           <header className="footer-title">Newsletter</header>
           <label className="label">
-            <span className="label-text">Enter your email address</span>
+            <span className="label-text text-[#a6adba] ">
+              Enter your email address
+            </span>
           </label>
           <div className="">
             <div class="relative">
@@ -42,7 +44,7 @@ export default function FooterSection() {
                 type="text"
                 id="Search"
                 placeholder="Enter your email"
-                class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm px-2"
+                class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm px-2  bg-[#3b3b3b]"
               />
 
               <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
@@ -58,7 +60,7 @@ export default function FooterSection() {
           </div>
         </form>
       </footer>
-      <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+      <footer className="footer px-10 py-4 border-t bg-[#1d232a] text-[#a6adba] border-[#a6adba]">
         <aside className="items-center grid-flow-col">
           <svg
             width="24"
@@ -74,7 +76,7 @@ export default function FooterSection() {
           <p>
             EcoDiscova
             <br />
-            Providing reliable tech 
+            Providing reliable tech
           </p>
         </aside>
         <nav className="md:place-self-center md:justify-self-end">

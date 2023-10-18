@@ -11,7 +11,7 @@
           showArrows={false}
           showStatus={false}
           showThumbs={false}
-          className="mt-[100px]"
+          className="mt-[10px] pt-[90px]"
         >
           <div className="mx-[20px] md:mx-[80px] ">
             <div className="  backgroundSlide1  " />

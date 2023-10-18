@@ -42,7 +42,7 @@ export default function NewsSection() {
 
   return (
     <>
-      <div className="mt-[90px] px-5">
+      <div className="mt-[90px] px-5 text-[#a6adba] ">
         <Header title={"Latest News"} />
         <h2 className="text-center">Get News From EcoDiscova</h2>
         <div className="flex gap-4 mt-[40px]">

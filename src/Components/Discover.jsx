@@ -6,7 +6,7 @@ export default function Discover() {
     <div className="px-5  flex flex-col lg:flex-row my-[40px] py-[90px] justify-center items-center lg:items-start">
       <div className=" md:w-[600px]   lg:w-[70%]">
         <h4 className="text-[#4baf47] ">Embrace The Green, Sow The Future</h4>
-        <h1 className="text-2xl leading-[25px] lg:text-[50px] lg:leading-[64px]">
+        <h1 className="text-2xl text-[#a6adba] leading-[25px] lg:text-[50px] lg:leading-[64px]">
           We Are Here To Increase Your Modern Life With{" "}
           <span className="text-[#4baf47]">Planting</span>
         </h1>
@@ -21,7 +21,7 @@ export default function Discover() {
         </Link>
       </div>
 
-      <div className="md:w-[600px] lg:w-[700px]">
+      <div className="md:w-[600px] lg:w-[700px] text-[#a6adba]">
         <p>
           We Are An Organization Engaged In "Tree Planting" Activities,
           Therefore You Can "Donate Trees. We Also Join In "Community Forestry |
@@ -31,7 +31,7 @@ export default function Discover() {
         <div className="flex flex-col mt-[40px] gap-4">
           <div>
             <div className="flex justify-between">
-              <p>Carbon Offsetting</p>
+              <p className="text[#a6adba]">Carbon Offsetting</p>
               <p className="text-[#4baf47]">80%</p>
             </div>
             <progress
@@ -42,7 +42,7 @@ export default function Discover() {
           </div>
           <div>
             <div className="flex justify-between">
-              <p>Water Conservation</p>
+              <p className="text-[#a6adba]">Water Conservation</p>
               <p className="text-[#4baf47]">90%</p>
             </div>
             <progress
@@ -53,7 +53,7 @@ export default function Discover() {
           </div>{" "}
           <div>
             <div className="flex justify-between">
-              <p>E-Waste Recycling</p>
+              <p className="text-[#a6adba]">E-Waste Recycling</p>
               <p className="text-[#4baf47]">70%</p>
             </div>
             <progress

@@ -47,7 +47,7 @@ export default function OurClientsFeedbackSection() {
         textSizeSM={"xl"}
         textSize={"4xl"}
       />
-      <h1 className="text-center ">Foresty Loves People</h1>
+      <h1 className="text-center text-[#a6adba] ">EcoDiscova Loves People</h1>
       <div className="mt-10">
         <Swiper
           spaceBetween={50}
@@ -64,7 +64,7 @@ export default function OurClientsFeedbackSection() {
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
-              <div>
+              <div className="text-[#a6adba] ">
                 <a
                   href="#"
                   class="relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8"
