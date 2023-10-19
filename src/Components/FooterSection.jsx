@@ -8,29 +8,24 @@ export default function FooterSection() {
       <footer className="footer p-10 bg-[#1d232a] text-[#a6adba]  border-t  border-[#a6adba]">
         <nav>
           <header className="footer-title">Services</header>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
+          <a className="link link-hover">Partnership</a>
+          <a className="link link-hover">Education</a>
         </nav>
         <nav>
           <header className="footer-title">Company</header>
           <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+          <a className="link link-hover">Contact us</a>
         </nav>
         <nav>
           <header className="footer-title">Legal</header>
           <a className="link link-hover">Terms of use</a>
           <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
         </nav>
         <form>
           <header className="footer-title">Newsletter</header>
           <label className="label">
-            <span className="label-text text-[#a6adba] ">
-              Enter your email address
+            <span className="label-text text-[#a6adba]">
+              Subscribe to our newsletters
             </span>
           </label>
           <div className="">
@@ -44,7 +39,7 @@ export default function FooterSection() {
                 type="text"
                 id="Search"
                 placeholder="Enter your email"
-                class="w-full rounded-md border-gray-200 py-2.5 pe-10 shadow-sm sm:text-sm px-2  bg-[#3b3b3b]"
+                class="w-full rounded-md border-gray-200 py-2.5 pr-20 pl-2.5 shadow-sm sm:text-sm  bg-[#3b3b3b]"
               />
 
               <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
@@ -52,7 +47,7 @@ export default function FooterSection() {
                   type="button"
                   className="text-white hover:text-gray-700"
                 >
-                  <GrSend className="text-white" />
+                  <GrSend className="text-xl text-white" />
                   {/* <SendOutlined/>  */}
                 </button>
               </span>

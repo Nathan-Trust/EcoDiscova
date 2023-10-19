@@ -42,7 +42,7 @@ export default function OurClientsFeedbackSection() {
   return (
     <div className="mt-9">
       <Header
-        title={"Our Client's Feedback"}
+        title={"Our Client Reviews"}
         text={"text-start"}
         textSizeSM={"xl"}
         textSize={"4xl"}
@@ -94,9 +94,7 @@ export default function OurClientsFeedbackSection() {
 
                   <div class="mt-4">
                     <p class=" text-sm text-gray-500">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      At velit illum provident a, ipsa maiores deleniti
-                      consectetur nobis et eaque.
+                      Hearing about the innovation and possibilities that this prject will bring was a beacon of hope. I can't wait to see the transformative change in our society
                     </p>
                   </div>
                 </a>
