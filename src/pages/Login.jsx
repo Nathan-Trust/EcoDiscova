@@ -2,15 +2,39 @@ import React, {useState }  from 'react'
 import {Link} from "react-router-dom"
 import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+import { FcGoogle } from "react-icons/fc";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../utils/firebase";
 
 export default function Login() {
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const [loading, setLoading] = useState(false)
+  const [error , setError] = useState("")
 
+  const navigate = useNavigate()
 
   const handleTogglePassword = () => {
     setPasswordVisible((prevState) => !prevState);
   };
+ const handleSubmit = async (e) => {
+   e.preventDefault();
+   setLoading(true);
+   const email = e.target[0].value;
+   const password = e.target[1].value;
 
+
+  console.log("Email:", email);
+  console.log("Password:", password);
+
+   try {
+     await signInWithEmailAndPassword(auth, email, password);
+     navigate("/dashboard");
+   } catch (err) {
+     setError(err); 
+     setLoading(false);
+   }
+ };
 
 
   return (
@@ -86,7 +110,22 @@ export default function Login() {
               </span>
             </div>
             <p class="text-gray-100">or use email your account</p>
-            <form action="" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
+            <div>
+              {error && (
+                <div className="text-red-400" style={{ fontSize: "12px" }}>
+                  <span>{error.message}</span>
+                </div>
+              )}
+
+              {loading && (
+                <div className="dark:text-white">Checking database... </div>
+              )}
+            </div>
+
+            <form
+              onSubmit={handleSubmit}
+              class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto"
+            >
               <div class="pb-2 pt-4">
                 <input
                   type="email"
@@ -128,7 +167,10 @@ export default function Login() {
                 </Link>
               </h2>
               <div class="px-4 pb-2 pt-4">
-                <button class="uppercase block w-full p-4 text-lg rounded-full bg-[#4baf47] hover:bg-[#5ca75a] focus:outline-none">
+                <button
+                  type="submit"
+                  class="uppercase block w-full p-4 text-lg rounded-full bg-[#4baf47] hover:bg-[#5ca75a] focus:outline-none"
+                >
                   sign in
                 </button>
               </div>

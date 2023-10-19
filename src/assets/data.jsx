@@ -33,14 +33,15 @@ import {
   BsShield,
   BsChatLeft,
 } from "react-icons/bs";
+import {FaRegHandshake} from "react-icons/fa"
 import { BiColorFill } from "react-icons/bi";
-import { IoMdContacts } from "react-icons/io";
+// import { IoTelescopeOutline } from "react-icons/io";
 import { RiContactsLine, RiStockLine } from "react-icons/ri";
 import { MdOutlineSupervisorAccount } from "react-icons/md";
 import { HiOutlineRefresh } from "react-icons/hi";
 import { TiTick } from "react-icons/ti";
 import { GiLouvrePyramid } from "react-icons/gi";
-import { GrLocation } from "react-icons/gr";
+import { GoTelescope } from "react-icons/go";
 
 
 
@@ -214,38 +215,18 @@ export const newsSections = [
 
 export const links = [
   {
-    name: "Dashboard",
-    link: "/dashboard",
-    icon: <MdDashboard />,
+    name: "Discoveries",
+    link: "/dashboard/discoveries",
+    icon: <GoTelescope />,
   },
   {
-    name: "Analytics",
-    link: "/analytics",
-    icon: <MdAnalytics />,
+    name: "Partnership",
+    link: "/dashboard/discoveries",
+    icon: <FaRegHandshake />,
   },
   {
-    name: "Invoice",
-    link: "/invoice",
+    name: "Fundraising",
+    link: "/dashboard/fundraising",
     icon: <MdInventory />,
-  },
-  {
-    name: "Schedule",
-    link: "/schedule",
-    icon: <MdNotes />,
-  },
-  {
-    name: "Calendar",
-    link: "/calendar",
-    icon: <MdCalendarMonth />,
-  },
-  {
-    name: "Messages",
-    link: "/messages",
-    icon: <MdMessage />,
-  },
-  {
-    name: "Notifications",
-    link: "/notification",
-    icon: <MdOutlineNotifications />,
   },
 ];

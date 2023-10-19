@@ -6,6 +6,7 @@ export default {
       backgroundColor: {
         "main-bg": "#1d232a",
         "bg-eco-discova": "#4baf47",
+        "light-gray": "#F7F7F7",
       },
     },
   },
