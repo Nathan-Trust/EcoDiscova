@@ -9,18 +9,20 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 // import { signInWithPopup } from "firebase/auth";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { storage } from "../utils/firebase";
-// import { db } from "../utils/firebase";
-// import { doc, setDoc } from "firebase/firestore";
+import { db } from "../utils/firebase";
+import { doc, setDoc } from "firebase/firestore";
 
 export default function SignUp() {
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
+  const [display , setDisplay] = useState("")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState("");
   const [passwordVisible, setPasswordVisible] = useState(false);
   const { setDisplayName, setStorageRef } = useMyContext();
   const navigate = useNavigate();
+  
 
   /* Google Authentication */
   // const googleProvider = new GoogleAuthProvider();
@@ -33,29 +35,31 @@ export default function SignUp() {
   //     console.log(error);
   //   }
   // };
+  
+const handleSubmit = async (e) => {
+  setLoading(true);
+  e.preventDefault();
 
-  const handleSubmit = async (e) => {
-    console.log("signed in");
-    setLoading(true);
-    e.preventDefault();
-    const displayName = e.target[0].value;
-    const email = e.target[1].value;
-    const password = e.target[2].value;
+  console.log("Email:", email);
+  console.log("Password:", password);
+  try {
+    // Create user
+    const res = await createUserWithEmailAndPassword(auth, email, password);
 
-    try {
-      const res = await createUserWithEmailAndPassword(auth, email, password);
-      const date = new Date().getTime();
-      const storageRef = ref(storage, `${displayName + date}`);
-      setDisplayName(displayName);
-      setStorageRef(storageRef);
-      navigate("avatar");
-    } catch (err) {
-      console.error("Registration error:", err);
-      setError(true);
-      setLoading(false);
-      setErr(err);
-    }
-  };
+    const date = new Date().getTime();
+    const storageRef = ref(storage, `${display + date}`);
+    setDisplayName(display);
+    setStorageRef(storageRef);
+    navigate("avatar");
+  } catch (err) {
+    setError(true);
+    setLoading(false);
+    setErr(err);
+  }
+};
+
+  
+  
 
   const handleTogglePassword = () => {
     setPasswordVisible((prevState) => !prevState);
@@ -133,6 +137,11 @@ export default function SignUp() {
                   </div>
                 </div>
               </div>
+              {error && (
+                <div className=" mt-2 text-red-400 text-sm">
+                  <p>{`Oops! something went wrong ${err}`} </p>
+                </div>
+              )}
 
               <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
                 <p className="mx-4 mb-0 text-center font-semibold dark:text-white">
@@ -148,6 +157,7 @@ export default function SignUp() {
                     type="text"
                     id="name"
                     placeholder="Name"
+                    onChange={(e) => setDisplay(e.target.value)}
                     className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
                   />
 
@@ -166,6 +176,7 @@ export default function SignUp() {
                     type="email"
                     id="UserEmail"
                     placeholder="Email"
+                    onChange={(e) => setEmail(e.target.value)}
                     className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
                   />
 
@@ -185,6 +196,7 @@ export default function SignUp() {
                       type={passwordVisible ? "text" : "password"}
                       id="password"
                       placeholder="Passsword"
+                      onChange={(e) => setPassword(e.target.value)}
                       className="peer h-8 w-full border-none bg-transparent p-0 placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 sm:text-sm"
                     />
 

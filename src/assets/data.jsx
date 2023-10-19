@@ -5,6 +5,56 @@ import comm1 from "../assets/comm1.jpeg"
 import news from "../assets/news.png";
 import uk from "../assets/uk.jpeg";
 import uk2 from "../assets/uk2.jpeg";
+import fundraiser1 from "../assets/fundraiser1.jpg"
+import news from "../assets/news.png";
+
+import { MdAnalytics,
+  MdCalendarMonth,
+  MdDashboard,
+  MdInventory,
+  MdMessage,
+  MdNotes,
+  MdOutlineNotifications,
+  MdVideoLibrary,
+} from "react-icons/md";
+import {
+  AiOutlineCalendar,
+  AiOutlineShoppingCart,
+  AiOutlineAreaChart,
+  AiOutlineBarChart,
+  AiOutlineStock,
+} from "react-icons/ai";
+import {
+  FiShoppingBag,
+  FiEdit,
+  FiPieChart,
+  FiBarChart,
+  FiCreditCard,
+  FiStar,
+  FiShoppingCart,
+} from "react-icons/fi";
+
+
+import {
+  BsKanban,
+  BsBarChart,
+  BsBoxSeam,
+  BsCurrencyDollar,
+  BsShield,
+  BsChatLeft,
+} from "react-icons/bs";
+import {FaRegHandshake} from "react-icons/fa"
+import { BiColorFill } from "react-icons/bi";
+// import { IoTelescopeOutline } from "react-icons/io";
+import { RiContactsLine, RiStockLine } from "react-icons/ri";
+import { MdOutlineSupervisorAccount } from "react-icons/md";
+import { HiOutlineRefresh } from "react-icons/hi";
+import { TiTick } from "react-icons/ti";
+import { GiLouvrePyramid } from "react-icons/gi";
+import { GoTelescope } from "react-icons/go";
+
+
+
 
 export const cards = [
   {
@@ -165,5 +215,25 @@ export const newsSections = [
     content:
       "A spokesman said: Since the current packaging producer responsibility regime was introduced, recycling rates have increased significantly. However, there is much more to do. We don't recycle enough waste, and we export too much of it.",
     img: `${comm1}`,
+  },
+];
+
+
+
+export const links = [
+  {
+    name: "Discoveries",
+    link: "/dashboard/discoveries",
+    icon: <GoTelescope />,
+  },
+  {
+    name: "Partnership",
+    link: "/dashboard/discoveries",
+    icon: <FaRegHandshake />,
+  },
+  {
+    name: "Fundraising",
+    link: "/dashboard/fundraising",
+    icon: <MdInventory />,
   },
 ];

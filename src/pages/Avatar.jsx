@@ -151,84 +151,82 @@ export default function Avatar() {
 
   return (
     <div
-      className="flex items-center justify-center dark:bg-[#191628] bg-gray-400 h-screen"
+      className="flex  bg-main-bg h-screen"
       style={{ margin: "0px", padding: "0px" }}
     >
-
       {contentVisible && (
-        <div className=" dark:bg-[#2a2442] bg-white dark:text-[#d4d3d9] p-4 rounded-md">
-          <div className="flex justify-end">
-            <p className="text-gray-500 cursor-pointer" onClick={handleSkip}>
-              Skip
-            </p>
-          </div>
+        <div className=" border border-[#4baf47] flex lg:flex-row  justify-center lg:justify-between items-center flex-col w-full lg:px-[5rem] bg-main-bg dark:text-[#d4d3d9] p-4 rounded-md ">
           <div className={`flex justify-center`}>
             <img
               src={imageDataUrl}
               alt="avatar"
-              className="rounded-full w-[100px] h-[100px]"
+              className="rounded-full w-[200px] h-[200px] lg:w-[400px] lg:h-[400px]"
             />
           </div>
-          <h3 className="text-center mt-4 text-xl">
-            {`Welcome ${displayName}`}
-          </h3>
-          <div className="w-[350px]">
-            <p>We're happy to have you join the cravens</p>
-            <p>
-              But for we all to know your identity we'll love you to add an
-              avatar to proceed{" "}
-            </p>
-          </div>
-          <form onSubmit={handleSubmit}>
-            <label
-              htmlFor="file"
-              className=" cursor-pointer flex items-center gap-2 dark:text-white mt-2"
-            >
-              <MdImage className="text-2xl" /> <span>Add an avatar</span>
-            </label>
-            <input
-              type="file"
-              id="file"
-              style={{ display: "none" }}
-              onChange={handleFileChange}
-            />
 
-            <div className="flex justify-end">
-              {showAddImage && <button type="submit">Add Image </button>}
+          <div className="flex flex-col items-center ">
+            <div className="flex justify-end self-end fixed right-0 top-0 mx-[25px] my-[10px]">
+              <p className="text-gray-500 cursor-pointer" onClick={handleSkip}>
+                Skip
+              </p>
             </div>
-          </form>
+            <div>
+              
+            </div>
+            <h3 className="text-center mt-4 text-2xl lg:text-5xl mb-[20px]  ">
+              {`Welcome ${displayName}`}
+            </h3>
+            <div className="lg:w-[70%] text-center lg:text-2xl mb-[10px]">
+              <p>
+                We're happy to have you join the
+                <span className=""> EcoDiscova</span>{" "}
+              </p>
+              <p>
+                But for we all to know your identity we'll love you to add an
+                avatar to proceed{" "}
+              </p>
+            </div>
+            <form onSubmit={handleSubmit}>
+              <label
+                htmlFor="file"
+                className=" cursor-pointer flex items-center  gap-2 dark:text-white mt-[15px]"
+              >
+                {showAddImage ?<> <MdImage className="text-3xl" /> <span>Change avatar</span> </>:<> <MdImage className="text-3xl" /> <span>Add an avatar</span></>} 
+                {/* <MdImage className="text-3xl" /> <span>Add an avatar</span> */}
+              </label>
+              <input
+                type="file"
+                id="file"
+                style={{ display: "none" }}
+                onChange={handleFileChange}
+              />
+
+              <div className="flex justify-end">
+                {showAddImage && <button type="submit">Add Image </button>}
+              </div>
+            </form>
+          </div>
         </div>
       )}
 
       {animateImage && (
-        <div className="flex items-center justify-center flex-col gap-10">
+        <div className="flex w-full items-center justify-center flex-col gap-10">
           <div>
             <img
               src={imageDataUrl}
               alt="avatar"
-              className="rounded-full w-[200px] h-[200px]"
+              className="rounded-full w-[300px] h-[300px]"
             />
           </div>
           <div>
             {loading && (
-              <div className="dark:text-white">
+              <div className="">
                 <BouncingLoader />
               </div>
             )}
           </div>
         </div>
       )}
-
-      <div className="fixed right-4 bottom-4">
-        <button
-          type="button"
-          style={{  borderRadius: "50%" }}
-          className="text-2xl p-3 hover:drop-shadow-xl text-white"
-          onClick={() => setThemeSettings(true)}
-        >
-          <MdSettings />
-        </button>
-      </div>
     </div>
   );
 }
