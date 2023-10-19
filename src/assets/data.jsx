@@ -2,7 +2,6 @@ import america from "../assets/america.jpeg";
 import comm2 from "../assets/comm2.jpeg";
 import comm3 from "../assets/comm3.jpeg"
 import comm1 from "../assets/comm1.jpeg"
-import news from "../assets/news.png";
 import uk from "../assets/uk.jpeg";
 import uk2 from "../assets/uk2.jpeg";
 import fundraiser1 from "../assets/fundraiser1.jpg"
