@@ -63,7 +63,7 @@ export default function FundraiserSection() {
             <div>
               <div className="card swiperCard bg-[#1d232a] text-[#a6adba] shadow-xl border-2 border-gray-500 border-solid">
                 <figure>
-                  <img src={slide.image} alt={slide.goal} />
+                  <img src={slide.image} alt={slide.goal} className="w-full h-[220px]" />
                 </figure>
                 <div className="flex flex-col py-5 px-2">
                   <div className="flex justify-between">
@@ -76,7 +76,7 @@ export default function FundraiserSection() {
                     max="100"
                   ></progress>
                   <div className="card-actions mt-6 hover:text-[#4baf47] text-3xl">
-                    <h3>{slide.theme}</h3>
+                    <h3 className="text-2xl md:text-">{slide.theme}</h3>
                   </div>
                   <Link to="/logIn" className="example_ff my-4 " rel="nofollow">
                     <span>

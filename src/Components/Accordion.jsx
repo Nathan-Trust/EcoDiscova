@@ -33,7 +33,7 @@ export default function ControlledAccordion() {
   };
 
   return (
-    <div className="flex flex-col gap-3">
+    <div className='flex flex-col gap-3'>
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
@@ -45,8 +45,8 @@ export default function ControlledAccordion() {
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
+          aria-controls='panel1bh-content'
+          id='panel1bh-header'
           sx={{
             backgroundColor:
               activePanel === "panel1" ? backgroundColor : "#636973",
@@ -59,14 +59,15 @@ export default function ControlledAccordion() {
           }}
         >
           <Typography sx={{ width: "33%", flexShrink: 0, fontSize: "21px" }}>
-            Carbon Offsetting
+            Education
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#1d232a", color: "#8d94a0" }}>
           <Typography>
-            Tree planting is the act of planting young trees, shrubs, or other
-            woody plants into the ground to establish new forests or enhance
-            existing ones. It is a crucial component of environmental
+            We are focused on raising awareness and imparting knowledge about
+            recycling, its benefits, and proper disposal methods. This involves
+            workshops, awareness campaigns, and educational materials to inform
+            and engage the community.
           </Typography>
         </AccordionDetails>
       </Accordion>{" "}
@@ -81,8 +82,8 @@ export default function ControlledAccordion() {
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
+          aria-controls='panel1bh-content'
+          id='panel1bh-header'
           sx={{
             backgroundColor:
               activePanel === "panel2" ? backgroundColor : "#636973",
@@ -95,14 +96,12 @@ export default function ControlledAccordion() {
           }}
         >
           <Typography sx={{ width: "33%", flexShrink: 0, fontSize: "21px" }}>
-            Community Forestry
+            Conservation
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#1d232a", color: "#8d94a0" }}>
           <Typography>
-            Tree planting is the act of planting young trees, shrubs, or other
-            woody plants into the ground to establish new forests or enhance
-            existing ones. It is a crucial component of environmental
+          In our recycling efforts, we're all about taking care of our precious natural resources and cutting down on waste. We've got recycling programs in place that not only reduce the harm we do to the environment but also keep our landfills from piling up. It's all about being responsible with how we manage our valuable resources.
           </Typography>
         </AccordionDetails>
       </Accordion>{" "}
@@ -117,8 +116,8 @@ export default function ControlledAccordion() {
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
+          aria-controls='panel1bh-content'
+          id='panel1bh-header'
           sx={{
             backgroundColor:
               activePanel === "panel3" ? backgroundColor : "#636973",
@@ -131,14 +130,16 @@ export default function ControlledAccordion() {
           }}
         >
           <Typography sx={{ width: "33%", flexShrink: 0, fontSize: "21px" }}>
-            E-waste Recycling
+            Collaboration
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#1d232a", color: "#8d94a0" }}>
           <Typography>
-            Tree planting is the act of planting young trees, shrubs, or other
-            woody plants into the ground to establish new forests or enhance
-            existing ones. It is a crucial component of environmental
+            Collaboration means teaming up with local businesses, government
+            agencies, and environmental organizations to build a strong support
+            network for recycling projects. It's all about forming partnerships
+            to make recycling facilities better and to reach out to more people
+            in the community.
           </Typography>
         </AccordionDetails>
       </Accordion>{" "}
@@ -153,8 +154,8 @@ export default function ControlledAccordion() {
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
-          aria-controls="panel1bh-content"
-          id="panel1bh-header"
+          aria-controls='panel1bh-content'
+          id='panel1bh-header'
           sx={{
             backgroundColor:
               activePanel === "panel4" ? backgroundColor : "#636973",
@@ -167,14 +168,16 @@ export default function ControlledAccordion() {
           }}
         >
           <Typography sx={{ width: "33%", flexShrink: 0, fontSize: "21px" }}>
-            Water Conservation
+            Modernization
           </Typography>
         </AccordionSummary>
         <AccordionDetails sx={{ backgroundColor: "#1d232a", color: "#8d94a0" }}>
           <Typography>
-            Tree planting is the act of planting young trees, shrubs, or other
-            woody plants into the ground to establish new forests or enhance
-            existing ones. It is a crucial component of environmental
+            We're bringing a modern touch to our project by introducing
+            technology and creative solutions. This could mean using smart
+            recycling bins, mobile apps to track your recycling progress, or
+            even fun games to motivate recycling. These fresh ideas make our
+            project more efficient and engaging for everyone involved.
           </Typography>
         </AccordionDetails>
       </Accordion>
