@@ -104,9 +104,6 @@ const SideBar = () => {
               <div>
                 <NavLink
                   to={`${link.link}`}
-                  // style={({ isActive }) => ({
-                  //   color: isActive ? currentColor : "",
-                  // })}
                   className={({ isActive }) =>
                     isActive
                       ? "flex items-center gap-5 p-2 pt-3 pb-2.5  text-white  text-2xl"
