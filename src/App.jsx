@@ -8,6 +8,7 @@ import SignUp from "./pages/SignUp";
 import ProtectedRoute from "./ProtectedRoute";
 import Avatar from "./pages/Avatar";
 import Dashboard from "./pages/Dashboard";
+import Partnership from "./pages/Partnership";
 
 
 function App() {
@@ -31,6 +32,14 @@ function App() {
           element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard/partnership"
+          element={
+            <ProtectedRoute>
+              <Partnership />
             </ProtectedRoute>
           }
         />

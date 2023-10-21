@@ -1,19 +1,19 @@
-import React from "react";
 import { links } from "../../assets/data";
 import { Link, NavLink } from "react-router-dom";
 import { MdLogout, MdMenu, MdOutlineCancel } from "react-icons/md";
 import { auth } from "../../utils/firebase";
-import { useMyContext } from "../../contexts/useContext";;
-import { createBrowserHistory } from 'history'; 
-import { Navigate, useNavigate } from 'react-router-dom'; 
+import { useMyContext } from "../../contexts/useContext";
+// import { createBrowserHistory } from 'history';
+import {  useNavigate } from 'react-router-dom';
 
 
 
 const SideBar = () => {
-  const { activeMenu, setActiveMenu } = useMyContext();
+  const { activeMenu, setActiveMenu, screenSize } = useMyContext();
 
 
-  const history = createBrowserHistory(); // Create a custom history object
+
+  // const history = createBrowserHistory(); // Create a custom history object
   const navigate = useNavigate(); // Use useNavigate to navigate
 
 
@@ -47,9 +47,9 @@ const SideBar = () => {
     >
       {activeMenu ? (
         <>
-          <div className="flex flex-col justify-between  ">
+          <div className="flex flex-col justify-between ">
             <div>
-              <div className="flex justify-between items-center  ">
+              <div className="flex items-center justify-between ">
                 <Link
                   to="/"
                   className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight text-[#4baf47]"
@@ -61,20 +61,17 @@ const SideBar = () => {
                   type="button"
                   onClick={() => setActiveMenu(!activeMenu)}
                   style={{ color: "rgb(153, 171, 180)", borderRadius: "50%" }}
-                  className="text-2xl p-3 hover:drop-shadow-xl hover:bg-light-gray block md:hidden"
+                  className="block p-3 text-2xl hover:drop-shadow-xl hover:bg-light-gray md:hidden"
                 >
                   <MdOutlineCancel />
                 </button>
               </div>
 
               <div className="mt-10">
-                {links.map((link) => (
-                  <div>
+                {links.map((link, idx) => (
+                  <div key={idx}>
                     <NavLink
                       to={`${link.link}`}
-                      // style={({ isActive }) => ({
-                      //   backgroundColor: isActive ? currentColor : " ",
-                      // })}
                       className={({ isActive }) =>
                         isActive ? activeLink : normalLink
                       }
@@ -99,7 +96,7 @@ const SideBar = () => {
           <button
             type="button"
             style={{ color: "rgb(153, 171, 180)", borderRadius: "50%" }}
-            className="text-2xl p-3 hover:drop-shadow hover:bg-light-gray"
+            className="p-3 text-2xl hover:drop-shadow hover:bg-light-gray"
             onClick={() => {
               setActiveMenu(!activeMenu);
             }}
@@ -108,8 +105,8 @@ const SideBar = () => {
           </button>
 
           <div className="mt-10">
-            {links.map((link) => (
-              <div>
+            {links.map((link, idx) => (
+              <div key={idx}>
                 <NavLink
                   to={`${link.link}`}
                   className={({ isActive }) =>

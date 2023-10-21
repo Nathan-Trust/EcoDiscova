@@ -227,7 +227,7 @@ export const links = [
   },
   {
     name: "Partnership",
-    link: "/dashboard/discoveries",
+    link: "/dashboard/partnership",
     icon: <FaRegHandshake />,
   },
   {
