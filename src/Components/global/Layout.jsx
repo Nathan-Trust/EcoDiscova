@@ -35,7 +35,9 @@ function Layout({ children }) {
                     <div className="">
                         <NavbarDash />
                     </div>
-                    {children}
+                 <div className="px-4 max-w-[1200px] mx-auto">
+                 {children}
+                 </div>
                 </div>
             </div>
         </div>
