@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Layout from "../Components/global/Layout"
 // import image from '../assets/noah-buscher-x8ZStukS2PM-unsplash.jpg'
 
@@ -19,7 +20,7 @@ const DiscoveryFrom = () => {
         <h3></h3>
         <form action="#" >
             <div>
-                <label htmlFor="discovery" className="block my-3 text-xl font-medium leading-6 text-white">
+                <label htmlFor="discovery" className="block my-3 text-2xl font-medium leading-6 text-white">
                     Post a discovery
                 </label>
                 <textarea name="discovery" id="discovery" cols="60" rows="6" className="text-lg text-black rounded-lg" placeholder="What's Your Discovery?" />
@@ -33,7 +34,7 @@ const Discoveries = () => {
     const discoveries = [
         {
             id: 1,
-            title:"Saving Eccosytem",
+            title:"Discover with us together we build a better ecosystem",
             content: " A substantial discovery often brings a sense of joy and wonder to our lives. It could be stumbling upon a hidden gem in your local neighborhood, finding an unexpected act of kindness from a stranger, or uncovering a new passion or talent you never knew you had. These discoveries remind us of the beauty and surprises that life has to offer, adding a touch of excitement and gratitude to our everyday experiences. They are the small but meaningful moments that make life more enjoyable and fulfilling. Embracing the spirit of curiosity and exploration can lead to many nice discoveries that brighten our days.",
             image: "/images/eco.jpg"
         },
@@ -45,7 +46,7 @@ const Discoveries = () => {
         },
         {
             id: 31,
-            title:"Saving Eccosytem",
+            title:"Saving Eccosytem Part 2",
             content: " A substantial discovery often brings a sense of joy and wonder to our lives. It could be stumbling upon a hidden gem in your local neighborhood, finding an unexpected act of kindness from a stranger, or uncovering a new passion or talent you never knew you had. These discoveries remind us of the beauty and surprises that life has to offer, adding a touch of excitement and gratitude to our everyday experiences. They are the small but meaningful moments that make life more enjoyable and fulfilling. Embracing the spirit of curiosity and exploration can lead to many nice discoveries that brighten our days.",
             image: "/images/eco3.jpeg"
         }
@@ -61,8 +62,8 @@ const Discoveries = () => {
                        </div>
                         <div className="px-2 py-3">
                             <h4 className="my-3 text-3xl fontbold'">{title}</h4>
-                            <span>{content}</span>
-                            <a className="block w-40 px-3 py-2 my-2 text-xl text-center text-white rounded-md bg-primary hover:opacity-75" href="">Read More</a>
+                            <span>{content.slice(0, 330) + "..."}</span>
+                            <Link className="block w-40 px-3 py-2 my-2 text-xl text-center text-white rounded-md bg-primary hover:opacity-75" to="/dashboard/discoveries/1">Read More</Link>
                         </div>
                     </div>)
             })

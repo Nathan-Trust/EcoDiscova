@@ -10,6 +10,7 @@ import Avatar from "./pages/Avatar";
 import Dashboard from "./pages/Dashboard";
 import Discoveries from "./pages/Discoveries";
 import Partnership from "./pages/Partnership";
+import DiscoveryChild from "./pages/DiscoveryChild";
 
 
 function App() {
@@ -48,6 +49,14 @@ function App() {
           element={
             <ProtectedRoute>
               <Partnership />
+            </ProtectedRoute>
+          }
+        />
+         <Route
+          path="/dashboard/discoveries/1"
+          element={
+            <ProtectedRoute>
+              <DiscoveryChild />
             </ProtectedRoute>
           }
         />
