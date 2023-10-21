@@ -8,6 +8,7 @@ import SignUp from "./pages/SignUp";
 import ProtectedRoute from "./ProtectedRoute";
 import Avatar from "./pages/Avatar";
 import Dashboard from "./pages/Dashboard";
+import Discoveries from "./pages/Discoveries";
 import Partnership from "./pages/Partnership";
 
 
@@ -34,7 +35,14 @@ function App() {
               <Dashboard />
             </ProtectedRoute>
           }
-        />
+        />  <Route
+        path="/dashboard/discoveries"
+        element={
+          <ProtectedRoute>
+            <Discoveries />
+          </ProtectedRoute>
+        }
+      />
         <Route
           path="/dashboard/partnership"
           element={
