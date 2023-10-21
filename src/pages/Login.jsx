@@ -168,10 +168,11 @@ export default function Login() {
               </h2>
               <div class="px-4 pb-2 pt-4">
                 <button
+                  disabled={loading}
                   type="submit"
                   class="uppercase block w-full p-4 text-lg rounded-full bg-[#4baf47] hover:bg-[#5ca75a] focus:outline-none"
                 >
-                  sign in
+                  {loading?"Signing In...":"Sign in"}
                 </button>
               </div>
 
