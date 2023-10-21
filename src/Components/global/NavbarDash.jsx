@@ -22,7 +22,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
     type="button"
     onClick={customFunc}
     style={{ color }}
-    className="relative text-xl rounded-full p-3 hover:bg-light-gray"
+    className="relative  text-xl rounded-full p-3 hover:bg-light-gray"
   >
     <span
       style={{ background: dotColor }}
@@ -34,16 +34,6 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 
 const NavbarDash = () => {
     const {activeMenu , setActiveMenu , screenSize , setScreenSize , displayName} = useMyContext()
-//   const {
-//     activeMenu,
-//     setActiveMenu,
-//     isClicked,
-//     setIsClicked,
-//     handleClick,
-//     screenSize,
-//     setScreenSize,
-//     currentColor,
-//   } = useStateContext();
 
   const { currentUser } = useContext(AuthContext);
 
@@ -109,11 +99,7 @@ const NavbarDash = () => {
           </p>
           <MdKeyboardArrowDown className="text-gray-400 text-14" />
         </div>
-        {/* </TooltipComponent>
-        {isClicked.cart && <Cart />}
-        {isClicked.chat && <Chat />}
-        {isClicked.notification && <Notification />}
-        {isClicked.userProfile && <UserProfile />} */}
+       
       </div>
     </div>
   );

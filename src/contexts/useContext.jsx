@@ -57,7 +57,6 @@ export const ContextProvider = ({ children }) => {
   );
 };
 
-// Define a custom hook to use the context
 export function useMyContext() {
   return useContext(StateContext);
 };

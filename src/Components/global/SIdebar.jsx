@@ -3,24 +3,32 @@ import { links } from "../../assets/data";
 import { Link, NavLink } from "react-router-dom";
 import { MdLogout, MdMenu, MdOutlineCancel } from "react-icons/md";
 import { auth } from "../../utils/firebase";
-import { useMyContext } from "../../contexts/useContext";
+import { useMyContext } from "../../contexts/useContext";;
+import { createBrowserHistory } from 'history'; 
+import { Navigate, useNavigate } from 'react-router-dom'; 
+
 
 
 const SideBar = () => {
-  const { activeMenu , setActiveMenu} = useMyContext()
-//   const { activeMenu, setActiveMenu, currentColor, screenSize } =
-//     useStateContext();
+  const { activeMenu, setActiveMenu } = useMyContext();
+
+
+  const history = createBrowserHistory(); // Create a custom history object
+  const navigate = useNavigate(); // Use useNavigate to navigate
+
 
   const activeLink =
     "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  text-white  text-md m-2";
   const normalLink =
     "flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg text-md hover:text-[#4baf47] hover:bg-gray-800 m-2";
 
-  // const [user, loading] = useAuthState(auth);
-  const setLogOut = () => {
-    auth.signOut();
-    localStorage.removeItem("username");
-    localStorage.removeItem("password");
+
+  const handleLogout = () => {
+    auth.signOut().then(() => {
+      localStorage.removeItem("isUserSignedIn");
+      localStorage.removeItem("chatSignedIn");
+      navigate("/");
+    });
   };
 
   const handleCloseSideBar = () => {
@@ -81,7 +89,7 @@ const SideBar = () => {
 
               <div className="flex items-center gap-5 pl-4 pt-3 pb-2.5 rounded-lg  dark:text-white  text-md m-2 mt-24">
                 <MdLogout />
-                <Link onClick={setLogOut}>Log out</Link>
+                <Link onClick={handleLogout}>Log out</Link>
               </div>
             </div>
           </div>
@@ -116,7 +124,7 @@ const SideBar = () => {
             ))}
           </div>
           <div className="flex items-center gap-5 pt-3 pb-2.5 rounded-lg  dark:text-white text-gray-500 text-2xl  mt-12 max">
-            <MdLogout onClick={() => auth.signOut()} />
+            <MdLogout onClick={handleLogout} />
           </div>
         </div>
       )}
